@@ -1,0 +1,12 @@
+# Заглушка: asmjit отсутствует в дереве OpenHarmony 7.0 Release.
+# Нужна только для gn gen; реальная компиляция целей static_core,
+# зависящих от asmjit, на этапе ninja упадёт.
+
+config("asmjit_public_config") {
+}
+
+group("libasmjit") {
+}
+
+group("libasmjit_frontend_static") {
+}
